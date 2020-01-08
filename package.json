@@ -1,12 +1,20 @@
 {
+  "private": true,
   "name": "snowpack-sandbox",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "snowpack sandbox",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sp": "snowpack --include \"src/*\"",
+    "opt": "yarn sp --optimize",
+    "prepare": "snowpack"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "csz": "^1.1.1",
+    "htm": "^2.2.1",
+    "preact": "^10.2.1"
+  },
+  "devDependencies": {
+    "serve": "^11.3.0",
+    "snowpack": "^1.0.2"
+  }
 }
